@@ -4,7 +4,7 @@
 
 これは [bve-autopilot プラグイン](https://github.com/magicant/bve-autopilot)のテスト用シナリオです。
 
-# クリアカー
+## クリアカー
 
 シナリオには「クリアカー」という名前の架空車両が含まれています。
 
@@ -12,7 +12,7 @@
  - 常用ブレーキ減速度: 4.0 km/h/s
  - 非常ブレーキ減速度: 4.5 km/h/s
 
-# ライセンスとクレジット
+## ライセンスとクレジット
 
 このシナリオデータは [magicant](https://github.com/magicant) が作成しました。
 
