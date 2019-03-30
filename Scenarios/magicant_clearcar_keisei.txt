@@ -1,0 +1,10 @@
+BveTs Scenario 2.00
+
+RouteTitle = 京成千葉線
+Route = mackoy.Keisei\Map.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = mackoy & minatono & magicant
+Title = みどり台→千葉
+Image = mackoy.Keisei\Screenshot.jpg
+Comment =

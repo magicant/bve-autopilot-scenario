@@ -1,0 +1,4 @@
+BveTs Vehicle 1.00
+
+Parameters = parameters\1car.ini
+PerformanceCurve = performance\performance.ini
