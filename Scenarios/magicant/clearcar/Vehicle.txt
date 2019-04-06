@@ -2,4 +2,5 @@ BveTs Vehicle 1.00
 
 Parameters = parameters\1car.ini
 PerformanceCurve = performance\performance.ini
+Panel = panel\panel.ini
 Ats = ats\bve-autopilot.dll
