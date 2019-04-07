@@ -1,0 +1,47 @@
+BveTs Structure List 1.00
+
+# 背景
+bg,..\..\..\Nagoya_Common\Nature\Sky\Back_3.x
+
+# 地面
+ground_concrete_50,..\..\..\Nagoya_Common\Nature\Ground\Concrete_50.x
+
+# 軌道
+slab_5,..\..\..\Nagoya_Common\Railway_Obj\Rail\JR_Line\Slab.x
+
+# 線路終端
+railend,..\..\..\Nagoya_Common\Railway_Obj\End\4_End.x
+
+# 架線柱
+wirepole_inner,..\..\..\Nagoya_Common\Railway_Obj\Pole\Pole0_14.x
+wirepole_outer,..\..\..\Nagoya_Common\Railway_Obj\Pole\Pole0_15.x
+
+# 架線
+trolleywire_25a,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(25A).x
+trolleywire_25b,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(25B).x
+trolleywire_40a,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(40A).x
+trolleywire_40b,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(40B).x
+
+# 駅
+station_side_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\L.x
+station_floor_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\CL.x
+station_wall_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\WallL.x
+station_roof_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\RoofCL.x
+
+# 停止位置目標
+stopsign,..\..\..\Nagoya_Common\Railway_Obj\Sign\Stop\Stop.x
+
+# 速度制限標識
+speedlimit_0,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\0.x
+speedlimit_5,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\5.x
+speedlimit_10,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\10.x
+speedlimit_20,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\20.x
+speedlimit_40,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\40.x
+speedlimit_70,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\70.x
+speedlimit_80,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\80.x
+speedlimit_end,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\End.x
+speedlimit_l,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\L.x
+speedlimit_r,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\R.x
+speedlimit_0m,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Mei\0.x
+speedlimit_90m,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Mei\90.x
+speedlimit_pole,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Pole.x
