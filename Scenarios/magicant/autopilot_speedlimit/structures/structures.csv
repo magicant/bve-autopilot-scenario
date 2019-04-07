@@ -4,7 +4,7 @@ BveTs Structure List 1.00
 bg,..\..\..\Nagoya_Common\Nature\Sky\Back_3.x
 
 # 地面
-ground_concrete_50,..\..\..\Nagoya_Common\Nature\Ground\Concrete_50.x
+ground_grass_50,..\..\..\Nagoya_Common\Nature\Ground\Grass_50.x
 
 # 軌道
 slab_5,..\..\..\Nagoya_Common\Railway_Obj\Rail\JR_Line\Slab.x
