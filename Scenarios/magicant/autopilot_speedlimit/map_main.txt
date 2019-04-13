@@ -40,20 +40,20 @@ $distance + 10;
 	Beacon.Put(1006, -1, 0);
 $distance;
 
-distance + 600; // 75 km/h 制限曲線
+distance + 700; // 45 km/h 制限曲線
 	Curve.BeginTransition();
-	SpeedLimit.Begin(75);
+	SpeedLimit.Begin(45);
 	$distance = distance;
-	Structure['speedlimit_70'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_40'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_5'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
-$distance - 300;
-	Beacon.Put(1006, -1, 300075);
-$distance + 50;
-	Curve.Begin(700, 0.062);
-distance + 200;
-	Curve.BeginTransition();
+$distance - 500;
+	Beacon.Put(1006, -1, 500045);
+$distance + 25;
+	Curve.Begin(350, 0.042);
 distance + 50;
+	Curve.BeginTransition();
+distance + 25;
 	Curve.End();
 	SpeedLimit.End();
 	Structure['speedlimit_end'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
@@ -85,8 +85,8 @@ distance + 1000; // 70 km/h 制限曲線
 	Structure['speedlimit_70'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_0'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
-$distance - 400;
-	Beacon.Put(1006, -1, 400070);
+$distance - 500;
+	Beacon.Put(1006, -1, 500070);
 $distance + 50;
 	Curve.Begin(-600, -0.063);
 distance + 200;
