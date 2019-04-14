@@ -45,3 +45,7 @@ speedlimit_r,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\R.x
 speedlimit_0m,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Mei\0.x
 speedlimit_90m,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Mei\90.x
 speedlimit_pole,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Pole.x
+
+# 地上子 (ATS-S 路線ではないが ATS-S 用地上子で代用)
+transponder_1,..\..\..\Nagoya_Common\Railway_Obj\Signal\Beacon\S.x
+transponder_2,..\..\..\Nagoya_Common\Railway_Obj\Signal\Beacon\SN1.x

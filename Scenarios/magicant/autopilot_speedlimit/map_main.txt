@@ -21,6 +21,7 @@ $distance + 20; // 45 km/h 制限開始
 	Structure['speedlimit_5'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1006, -1, 45);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance;
 
 distance + 300;
@@ -29,15 +30,19 @@ distance + 300;
 	include 'map_station.txt';
 $distance - 200;
 	Beacon.Put(30, -1, 200000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 20;
 	Beacon.Put(30, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 2;
 	Beacon.Put(30, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance + 10;
 	SpeedLimit.End();
 	Structure['speedlimit_end'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1006, -1, 0);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance;
 
 distance + 700; // 45 km/h 制限曲線
@@ -49,6 +54,7 @@ distance + 700; // 45 km/h 制限曲線
 	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 $distance - 500;
 	Beacon.Put(1006, -1, 500045);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance + 25;
 	Curve.Begin(350, 0.042);
 distance + 50;
@@ -59,6 +65,7 @@ distance + 25;
 	Structure['speedlimit_end'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1006, -1, 0);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
 distance + 600;
 	Station['station2'].Put(-1, -2, 2);
@@ -66,16 +73,20 @@ distance + 600;
 	include 'map_station.txt';
 $distance - 500;
 	Beacon.Put(30, -1, 500000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 20;
 	Beacon.Put(30, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 2;
 	Beacon.Put(30, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance + 20; // 90 km/h 駅間制限開始
 	SpeedLimit.Begin(90);
 	Structure['speedlimit_90m'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_0m'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1007, -1, 90);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance;
 
 distance + 1000; // 70 km/h 制限曲線
@@ -87,6 +98,7 @@ distance + 1000; // 70 km/h 制限曲線
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 $distance - 500;
 	Beacon.Put(1006, -1, 500070);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance + 50;
 	Curve.Begin(-600, -0.063);
 distance + 200;
@@ -98,6 +110,7 @@ distance + 30;
 	Structure['speedlimit_0'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1006, -1, 80);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 distance + 200;
 	Curve.BeginTransition();
 distance + 50;
@@ -106,6 +119,7 @@ distance + 50;
 	Structure['speedlimit_end'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1006, -1, 0);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
 distance + 1000;
 	Station['station3'].Put(-1, -2, 2);
@@ -113,10 +127,13 @@ distance + 1000;
 	include 'map_station.txt';
 $distance - 700;
 	Beacon.Put(30, -1, 700000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 20;
 	Beacon.Put(30, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 2;
 	Beacon.Put(30, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance;
 
 distance + 500;
@@ -125,10 +142,13 @@ distance + 500;
 	include 'map_station.txt';
 $distance - 400;
 	Beacon.Put(30, -1, 400000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 20;
 	Beacon.Put(30, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 2;
 	Beacon.Put(30, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 210; // 駅内制限 40 km/h
 	SpeedLimit.Begin(40);
 	Structure['speedlimit_40'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
@@ -136,6 +156,7 @@ $distance - 210; // 駅内制限 40 km/h
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 distance - 200;
 	Beacon.Put(1006, -1, 200040);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 70; // 制限その 2
 	SpeedLimit.Begin(20);
 	Structure['speedlimit_20'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
@@ -143,6 +164,7 @@ $distance - 70; // 制限その 2
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 distance - 100;
 	Beacon.Put(1006, -1, 100020);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 15; // 制限その 3
 	SpeedLimit.Begin(10);
 	Structure['speedlimit_10'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
@@ -150,6 +172,7 @@ $distance - 15; // 制限その 3
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 distance - 40;
 	Beacon.Put(1006, -1, 40010);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance;
 
 distance + 10;
