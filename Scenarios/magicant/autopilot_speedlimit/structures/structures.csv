@@ -33,7 +33,9 @@ stopsign,..\..\..\Nagoya_Common\Railway_Obj\Sign\Stop\Stop.x
 
 # 速度制限標識
 speedlimit_0,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\0.x
+speedlimit_1,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\1.x
 speedlimit_5,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\5.x
+speedlimit_00,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\00.x
 speedlimit_10,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\10.x
 speedlimit_20,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\20.x
 speedlimit_40,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\40.x
