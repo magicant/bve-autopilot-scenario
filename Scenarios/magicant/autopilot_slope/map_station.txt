@@ -1,0 +1,26 @@
+BveTs Map 2.02
+
+$distance;
+	Structure['stopsign'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
+$distance - 25;
+	Repeater['station_side_l'].Begin0(0, 1, 5, 5, 'station_side_l_5');
+	Repeater['station_floor_l'].Begin0(0, 1, 5, 5, 'station_floor_l_5');
+	Repeater['station_wall_l'].Begin0(0, 1, 5, 5, 'station_wall_l_5');
+	Repeater['station_roof_l'].Begin0(0, 1, 5, 5, 'station_roof_l_5');
+	Repeater['station_eaves_l'].Begin0(0, 1, 5, 5, 'station_eaves_l_5');
+$distance + 5;
+	Repeater['station_side_l'].End();
+	Repeater['station_floor_l'].End();
+	Repeater['station_wall_l'].End();
+	Repeater['station_roof_l'].End();
+	Repeater['station_eaves_l'].End();
+
+$distance - 900;
+	Beacon.Put(30, -1, 900000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 20;
+	Beacon.Put(30, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 2;
+	Beacon.Put(30, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);

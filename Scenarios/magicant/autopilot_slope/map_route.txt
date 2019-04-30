@@ -1,0 +1,275 @@
+BveTs Map 2.02
+
+0;
+	Background.Change('bg');
+	Repeater['ground'].Begin(0, 0, -0.5, 0, 0, 0, 0, 1, 50, 50, 'ground_grass_50');
+	Repeater['ballast'].Begin0(0, 3, 5, 5, 'ballast_5');
+	Repeater['wirepoles'].Begin(0, 0, 0, 0, 0, 180, 0, 0, 0, 40, 'wirepole_inner', 'wirepole_outer');
+	Repeater['trolleywire'].Begin(0, 0, 0, 0, 0, 0, 0, 1, 40, 40, 'trolleywire_40a', 'trolleywire_40b');
+
+	Station['station0'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+
+$distance;
+	Repeater['houses_r'].Begin(0, 20, 0, 0, 0, 0, 0, 0, 0, 31,
+			'house_a', 'house_b', 'house_c', 'house_d', 'house_e',
+			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
+			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
+			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
+distance + 15;
+	Repeater['houses_l'].Begin(0, -20, 0, 0, 0, 0, 0, 0, 0, 31,
+			'house_j', 'house_i', 'house_h', 'house_g', 'house_f',
+			'house_e', 'house_d', 'house_c', 'house_b', 'house_a',
+			'house_t', 'house_s', 'house_r', 'house_q', 'house_p',
+			'house_o', 'house_n', 'house_m', 'house_l', 'house_k');
+
+$distance + 5;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 10 * $slope);
+distance + 5;
+	Gradient.Begin(10 * $slope);
+
+	SpeedLimit.Begin(90);
+	Structure['speedlimit_90'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1006, -1, 90);
+
+distance + 1000;
+
+	Station['station1'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+	Beacon.Put(1008, -1, 0); // 地上子からの勾配情報が無い場合の試験用
+
+distance + 1000;
+
+	Station['station2'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 5;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 20 * $slope);
+distance + 5;
+	Gradient.Begin(20 * $slope);
+
+distance + 1000;
+
+	Station['station3'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 5;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 30 * $slope);
+distance + 5;
+	Gradient.Begin(30 * $slope);
+
+distance + 1000;
+
+	Station['station4'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 5;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 40 * $slope);
+distance + 5;
+	Gradient.Begin(40 * $slope);
+
+distance + 1000;
+	Gradient.BeginTransition();
+distance + 20;
+	Structure['slope_sl'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 0);
+distance + 20;
+	Gradient.End();
+
+	Station['station5'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 5;
+	Gradient.BeginTransition();
+distance + 20;
+	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 40 * $slope);
+distance + 20;
+	Gradient.Begin(40 * $slope);
+
+distance + 1000;
+
+	Station['station6'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 5;
+	Gradient.BeginTransition();
+distance + 20;
+	Structure['slope_sl'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 0);
+distance + 20;
+	Gradient.End();
+
+distance + 600;
+
+	Gradient.BeginTransition();
+distance + 20;
+	$distance = distance;
+	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+distance + 20;
+	Gradient.Begin(40 * $slope);
+$distance - 300; // ブレーキを間に合わせるため手前に設置
+	Beacon.Put(1008, -1, 300040 * $slope);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+$distance + 400;
+
+	Station['station7'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 5;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 50 * $slope);
+distance + 5;
+	Gradient.Begin(50 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 60 * $slope);
+distance + 5;
+	Gradient.Begin(60 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 70 * $slope);
+distance + 5;
+	Gradient.Begin(70 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 80 * $slope);
+distance + 5;
+	Gradient.Begin(80 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 90 * $slope);
+distance + 5;
+	Gradient.Begin(90 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 100 * $slope);
+distance + 5;
+	Gradient.Begin(100 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 110 * $slope);
+distance + 5;
+	Gradient.Begin(110 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 120 * $slope);
+distance + 5;
+	Gradient.Begin(120 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 130 * $slope);
+distance + 5;
+	Gradient.Begin(130 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 140 * $slope);
+distance + 5;
+	Gradient.Begin(140 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 150 * $slope);
+distance + 5;
+	Gradient.Begin(150 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 160 * $slope);
+distance + 5;
+	Gradient.Begin(160 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 170 * $slope);
+distance + 5;
+	Gradient.Begin(170 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 180 * $slope);
+distance + 5;
+	Gradient.Begin(180 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 190 * $slope);
+distance + 5;
+	Gradient.Begin(190 * $slope);
+
+distance + 100;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 200 * $slope);
+distance + 5;
+	Gradient.Begin(200 * $slope);

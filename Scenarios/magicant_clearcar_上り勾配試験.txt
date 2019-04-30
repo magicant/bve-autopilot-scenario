@@ -1,0 +1,10 @@
+﻿BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_slope\map_uphill_main.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 上り勾配試験
+Image = 
+Comment = 上り勾配でもずれずに停車する試験

@@ -1,0 +1,7 @@
+BveTs Map 2.02
+
+Station.Load('stations_downhill.csv');
+Structure.Load('structures\structures_downhill.csv');
+
+$slope = -1;
+include 'map_route.txt';
