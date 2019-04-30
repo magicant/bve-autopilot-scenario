@@ -5,6 +5,6 @@ Route = magicant\autopilot_basic\map_main.txt
 VehicleTitle = クリアカー
 Vehicle = magicant\clearcar\Vehicle.txt
 Author = magicant
-Title = 基本試験
+Title = 01. 基本試験
 Image = 
 Comment = 単純に加速して停車するだけの試験
