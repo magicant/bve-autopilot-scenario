@@ -2,8 +2,11 @@ BveTs Map 2.02
 
 Station.Load('stations.csv');
 Structure.Load('structures\structures.csv');
+Signal.Load('signals.csv');
 
 0;
+	Section.SetSpeedLimit(0, 25, 45, 75, 100);
+
 	Background.Change('bg');
 	//Repeater['ground'].Begin(0, 0, -0.5, 0, 0, 0, 0, 3, 50, 50, 'ground_concrete_50');
 	Repeater['ballast'].Begin0(0, 3, 5, 5, 'ballast_5');
@@ -36,20 +39,82 @@ Structure.Load('structures\structures.csv');
 	include 'map_station.txt';
 $distance;
 
-distance + 300;
+distance + 25;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 400;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 400;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 215;
 	Station['station1'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
 $distance;
 
-distance + 600;
+distance + 25;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 400;
+	Section.Begin(0, 2, 3);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 300;
+	Section.Begin(0, 2);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 215;
 	Station['station2'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
 $distance;
 
-distance + 1000;
+distance + 25;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 550;
+	Section.Begin(0, 2, 3);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 300;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 300;
+	Section.Begin(0, 1, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+distance + 100;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+	// TODO 先行車
+
+distance + 215;
 	Station['station3'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
 $distance;
+
+distance + 25;
+	Section.Begin(0, 2, 4);
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
