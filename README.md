@@ -24,6 +24,7 @@
  2. 制限速度試験
  3. 上り勾配試験
  4. 下り勾配試験
+ 5. ATS-P 試験
 
 運転方法は[プラグインの Readme](https://github.com/magicant/bve-autopilot) を見てください。
 
