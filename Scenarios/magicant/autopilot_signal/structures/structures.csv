@@ -47,7 +47,7 @@ signal_pole,..\..\..\Nagoya_Common\Railway_Obj\SigPole\5Cw.x
 # 停止位置目標地上子 (ATS-S 路線ではないが ATS-S 用地上子で代用)
 transponder_1,..\..\..\Nagoya_Common\Railway_Obj\Signal\Beacon\S.x
 
-# ATS-P 地上子
+# 信号現示受信地上子 (ATS-P 地上子で代用)
 transponder_p,..\..\..\Nagoya_Common\Railway_Obj\Signal\Beacon\P.x
 
 # 柵

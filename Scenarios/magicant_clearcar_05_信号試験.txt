@@ -1,10 +1,10 @@
 ﻿BveTs Scenario 2.00
 
 RouteTitle = 自動運転試験線
-Route = magicant\autopilot_atsp\map_main.txt
+Route = magicant\autopilot_signal\map_main.txt
 VehicleTitle = クリアカー
 Vehicle = magicant\clearcar\Vehicle.txt
 Author = magicant
-Title = 05. ATS-P 試験
+Title = 05. 信号試験
 Image = 
-Comment = ATS-P に従って信号と制限速度を守る試験
+Comment = 信号に従って速度を守る試験
