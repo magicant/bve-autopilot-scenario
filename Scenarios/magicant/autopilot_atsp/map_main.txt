@@ -4,9 +4,9 @@ Station.Load('stations.csv');
 Structure.Load('structures\structures.csv');
 Signal.Load('signals.csv');
 
-0;
-	Section.SetSpeedLimit(0, 25, 45, 75, 100);
+Section.SetSpeedLimit(0, 25, 45, 75, 100);
 
+0;
 	Background.Change('bg');
 	//Repeater['ground'].Begin(0, 0, -0.5, 0, 0, 0, 0, 3, 50, 50, 'ground_concrete_50');
 	Repeater['ballast'].Begin0(0, 3, 5, 5, 'ballast_5');
