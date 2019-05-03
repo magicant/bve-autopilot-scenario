@@ -65,7 +65,7 @@ distance + 25;
 	Signal['signal_5'].Put(0, 0, -2, 3.8);
 	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
 
-distance + 400;
+distance + 700;
 	Section.Begin(0, 2, 3);
 	Signal['signal_5'].Put(0, 0, -2, 3.8);
 	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
@@ -87,12 +87,7 @@ distance + 25;
 	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
 
 distance + 550;
-	Section.Begin(0, 2, 3);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
-
-distance + 300;
-	Section.Begin(0, 2, 4);
+	Section.Begin(0, 2, 2, 3, 4);
 	Signal['signal_5'].Put(0, 0, -2, 3.8);
 	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
 
@@ -106,7 +101,7 @@ distance + 100;
 	Signal['signal_5'].Put(0, 0, -2, 3.8);
 	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
 
-	// TODO 先行車
+	PreTrain.Pass('12:04:45');
 
 distance + 215;
 	Station['station3'].Put(-1, -2, 2);
@@ -118,3 +113,5 @@ distance + 25;
 	Section.Begin(0, 2, 4);
 	Signal['signal_5'].Put(0, 0, -2, 3.8);
 	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+
+	PreTrain.Pass('12:04:46');
