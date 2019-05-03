@@ -37,81 +37,77 @@ Signal.Load('signals.csv');
 	Station['station0'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
-$distance;
 
-distance + 25;
+$distance + 25;
 	Section.Begin(0, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_85.txt';
 
-distance + 400;
+$distance + 400;
 	Section.Begin(0, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_280.txt';
 
-distance + 400;
+$distance + 400;
 	Section.Begin(0, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_280.txt';
 
 distance + 215;
 	Station['station1'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
-$distance;
 
-distance + 25;
+$distance + 25;
 	Section.Begin(0, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_180.txt';
 
-distance + 700;
+$distance + 700;
 	Section.Begin(0, 2, 3);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_280.txt';
 
-distance + 300;
+$distance + 300;
 	Section.Begin(0, 2);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_280.txt';
 
-distance + 215;
+$distance + 215;
 	Station['station2'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
-$distance;
 
-distance + 25;
+$distance + 25;
 	Section.Begin(0, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_180.txt';
 
-distance + 550;
+$distance + 550;
 	Section.Begin(0, 2, 2, 3, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_280.txt';
 
-distance + 300;
+$distance + 300;
 	Section.Begin(0, 1, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_280.txt';
 
-distance + 100;
+$distance + 100;
 	Section.Begin(0, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_85.txt';
 
 	PreTrain.Pass('12:04:45');
 
-distance + 215;
+$distance + 215;
 	Station['station3'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
-$distance;
 
-distance + 25;
+$distance + 25;
 	Section.Begin(0, 2, 4);
-	Signal['signal_5'].Put(0, 0, -2, 3.8);
-	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	$distance = distance;
+	include 'map_signal_180.txt';
 
 	PreTrain.Pass('12:04:46');
