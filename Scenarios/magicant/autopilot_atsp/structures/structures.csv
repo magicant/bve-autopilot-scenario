@@ -31,12 +31,6 @@ station_eaves_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\RoofL.x
 # 停止位置目標
 stopsign,..\..\..\Nagoya_Common\Railway_Obj\Sign\Stop\Stop.x
 
-# 速度制限標識
-speedlimit_0,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\0.x
-speedlimit_60,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\60.x
-speedlimit_l,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\L.x
-speedlimit_pole,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Pole.x
-
 # 信号機
 signal_5_r,..\..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal5L0.x
 signal_5_yy,..\..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal5L1.x
