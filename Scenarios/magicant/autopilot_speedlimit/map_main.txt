@@ -121,7 +121,7 @@ distance + 50;
 	Beacon.Put(1006, -1, 0);
 	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-distance + 1000;
+distance + 800;
 	Station['station3'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
