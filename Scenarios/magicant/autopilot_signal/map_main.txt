@@ -34,6 +34,12 @@ Section.SetSpeedLimit(0, 25, 45, 75, 100);
 			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
 			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
 
+	Beacon.Put(1011, -1, 0);
+	Beacon.Put(1011, -1, 1025);
+	Beacon.Put(1011, -1, 2045);
+	Beacon.Put(1011, -1, 3075);
+	Beacon.Put(1011, -1, 4100);
+
 	Station['station0'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
