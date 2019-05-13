@@ -44,7 +44,7 @@ Section.SetSpeedLimit(0, 25, 45, 75, 100);
 	$distance = distance;
 	include 'map_station.txt';
 
-$distance + 25;
+$distance + 26;
 	Section.Begin(0, 2, 4);
 	$distance = distance;
 	include 'map_signal_85.txt';
@@ -64,7 +64,7 @@ distance + 215;
 	$distance = distance;
 	include 'map_station.txt';
 
-$distance + 25;
+$distance + 26;
 	Section.Begin(0, 2, 4);
 	$distance = distance;
 	include 'map_signal_180.txt';
@@ -72,7 +72,7 @@ $distance + 25;
 $distance + 700;
 	Section.Begin(0, 2, 3);
 	$distance = distance;
-	include 'map_signal_280.txt';
+	include 'map_signal_600.txt';
 
 $distance + 300;
 	Section.Begin(0, 2);
@@ -84,20 +84,20 @@ $distance + 215;
 	$distance = distance;
 	include 'map_station.txt';
 
-$distance + 25;
+$distance + 26;
 	Section.Begin(0, 2, 4);
 	$distance = distance;
 	include 'map_signal_180.txt';
 
-$distance + 550;
+$distance + 601;
 	Section.Begin(0, 2, 2, 3, 4);
 	$distance = distance;
-	include 'map_signal_280.txt';
+	include 'map_signal_600.txt';
 
-$distance + 300;
+$distance + 200;
 	Section.Begin(0, 1, 2, 4);
 	$distance = distance;
-	include 'map_signal_280.txt';
+	include 'map_signal_180.txt';
 
 $distance + 100;
 	Section.Begin(0, 2, 4);
@@ -111,7 +111,7 @@ $distance + 215;
 	$distance = distance;
 	include 'map_station.txt';
 
-$distance + 25;
+$distance + 26;
 	Section.Begin(0, 2, 4);
 	$distance = distance;
 	include 'map_signal_180.txt';
