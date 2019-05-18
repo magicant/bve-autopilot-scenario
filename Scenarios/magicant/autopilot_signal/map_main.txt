@@ -104,7 +104,7 @@ $distance + 100;
 	$distance = distance;
 	include 'map_signal_85.txt';
 
-	PreTrain.Pass('12:04:45');
+	PreTrain.Pass('12:04:35');
 
 $distance + 215;
 	Station['station3'].Put(-1, -2, 2);
@@ -116,4 +116,4 @@ $distance + 26;
 	$distance = distance;
 	include 'map_signal_180.txt';
 
-	PreTrain.Pass('12:04:46');
+	PreTrain.Pass('12:04:36');
