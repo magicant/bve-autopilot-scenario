@@ -1,0 +1,10 @@
+BveTs Map 2.02
+
+include 'map_signal_85.txt';
+
+$distance - 130;
+	Beacon.Put(1012, 1, 0);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 180;
+	Beacon.Put(1012, 1, 0);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
