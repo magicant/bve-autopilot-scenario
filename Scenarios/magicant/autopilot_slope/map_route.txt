@@ -28,9 +28,10 @@ $distance + 5;
 	Gradient.BeginTransition();
 distance + 5;
 	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
-	Beacon.Put(1008, -1, 10 * $slope);
+	// 最初は地上子からの勾配情報なしで試験する
+	// Beacon.Put(1008, -1, 5 * $slope);
 distance + 5;
-	Gradient.Begin(10 * $slope);
+	Gradient.Begin(5 * $slope);
 
 	SpeedLimit.Begin(90);
 	Structure['speedlimit_90'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
@@ -39,15 +40,19 @@ distance + 5;
 	Beacon.Put(1006, -1, 90);
 
 distance + 1000;
-
 	Station['station1'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
-$distance;
-	Beacon.Put(1008, -1, 0); // 地上子からの勾配情報が無い場合の試験用
 
-distance + 1000;
+distance + 5;
+	Gradient.BeginTransition();
+distance + 5;
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, 10 * $slope);
+distance + 5;
+	Gradient.Begin(10 * $slope);
 
+$distance + 1000;
 	Station['station2'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
@@ -56,7 +61,7 @@ $distance;
 distance + 5;
 	Gradient.BeginTransition();
 distance + 5;
-	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1008, -1, 20 * $slope);
 distance + 5;
 	Gradient.Begin(20 * $slope);
@@ -99,6 +104,7 @@ distance + 20;
 distance + 20;
 	Gradient.End();
 
+distance + 20;
 	Station['station5'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
@@ -112,7 +118,7 @@ distance + 20;
 distance + 20;
 	Gradient.Begin(40 * $slope);
 
-distance + 1000;
+distance + 1500; // 速度維持の試験のためここだけ距離が長め
 
 	Station['station6'].Put(-1, -2, 2);
 	$distance = distance;
@@ -127,7 +133,7 @@ distance + 20;
 distance + 20;
 	Gradient.End();
 
-distance + 600;
+distance + 1000;
 
 	Gradient.BeginTransition();
 distance + 20;
@@ -135,11 +141,11 @@ distance + 20;
 	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
 distance + 20;
 	Gradient.Begin(40 * $slope);
-$distance - 300; // ブレーキを間に合わせるため手前に設置
-	Beacon.Put(1008, -1, 300040 * $slope);
+$distance - 150; // ブレーキを間に合わせるため手前に設置
+	Beacon.Put(1008, -1, 150040 * $slope);
 	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-$distance + 400;
+$distance + 25;
 
 	Station['station7'].Put(-1, -2, 2);
 	$distance = distance;
