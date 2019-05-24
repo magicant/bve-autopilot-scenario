@@ -103,6 +103,9 @@ $distance + 100;
 	Section.Begin(0, 2, 4);
 	$distance = distance;
 	include 'map_signal_85.txt';
+	Beacon.Put(1012, 0, 420);
+	Beacon.Put(1012, 1, 4320);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
 	PreTrain.Pass('12:04:35');
 
@@ -112,8 +115,74 @@ $distance + 215;
 	include 'map_station.txt';
 
 $distance + 26;
-	Section.Begin(0, 2, 4);
+	Section.Begin(0, 2, 3, 4);
 	$distance = distance;
-	include 'map_signal_180.txt';
+	// include 'map_signal_180.txt';
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1012, 1, 43320);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
 	PreTrain.Pass('12:04:36');
+
+$distance + 500;
+	Section.Begin(0, 2, 3, 3, 4);
+	$distance = distance;
+	// include 'map_signal_280.txt';
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1012, 1, 4320);
+	Beacon.Put(1012, 2, 4320);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+	PreTrain.Pass('12:05:18');
+
+$distance + 400;
+	Section.Begin(0, 2, 3, 4);
+	$distance = distance;
+	// include 'map_signal_280.txt';
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	// Beacon.Put(1012, 1, 4320); // 手前に設置済み
+	// Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+	PreTrain.Pass('12:05:45');
+
+$distance + 500;
+	Section.Begin(0, 2, 3, 4);
+	$distance = distance;
+	// include 'map_signal_280.txt';
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1012, 1, 4200);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+	PreTrain.Pass('12:06:00');
+
+$distance + 215;
+	Station['station4'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+
+$distance + 26;
+	Section.Begin(0, 0, 2, 4);
+	$distance = distance;
+	// include 'map_signal_280.txt';
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1012, 1, 4320);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+	PreTrain.Pass('12:06:20');
+
+$distance + 400;
+	Section.Begin(0, 2, 3, 4);
+	$distance = distance;
+	// include 'map_signal_280.txt';
+	Signal['signal_5'].Put(0, 0, -2, 3.8);
+	Structure['signal_pole'].Put(0, -2, 3.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1012, 1, 4320);
+	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+	PreTrain.Pass('12:06:25');
+
