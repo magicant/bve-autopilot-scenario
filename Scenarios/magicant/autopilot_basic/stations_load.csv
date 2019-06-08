@@ -1,0 +1,6 @@
+BveTs Station List 2.00
+#,Name,Arrival time,Departure time,Departure preparation duration,Jump time,Signal,Boarding duration,Occupancy rate,Arrival sound,Departure sound,Door reopen possibility,Door reopen duration
+station0,東野,,12:00:15,5,12:00:00,0,0,0,,,0,0
+station1,西野,12:00:55,12:01:05,5,12:00:55,0,0,1,,,0,0
+station2,南野,12:02:00,12:02:10,5,12:02:00,0,0,2,,,0,0
+station3,北野,12:03:20,12:03:30,5,12:03:20,0,0,1,,,0,0

@@ -1,4 +1,4 @@
 BveTs Map 2.02
 
-Station.Load('stations.csv');
+Station.Load('stations_load.csv');
 include 'map_route.txt';
