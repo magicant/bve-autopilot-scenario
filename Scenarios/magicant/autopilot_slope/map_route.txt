@@ -99,12 +99,15 @@ distance + 5;
 distance + 1000;
 	Gradient.BeginTransition();
 distance + 20;
+	$distance = distance;
 	Structure['slope_sl'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
-	Beacon.Put(1008, -1, 0);
 distance + 20;
 	Gradient.End();
+$distance - 150; // 勾配変化への追従を試験するため手前に設置
+	Beacon.Put(1008, -1, 150000);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-distance + 20;
+$distance + 40;
 	Station['station5'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
