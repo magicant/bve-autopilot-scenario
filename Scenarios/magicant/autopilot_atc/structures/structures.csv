@@ -1,0 +1,86 @@
+BveTs Structure List 1.00
+
+# 背景
+bg,..\..\..\Nagoya_Common\Nature\Sky\Starry.x
+
+# 地面
+#ground_concrete_50,..\..\..\Nagoya_Common\Nature\Ground\Concrete_50.x
+
+# 軌道
+ballast_5,..\..\..\Nagoya_Common\Railway_Obj\Rail\JR_Line\Ballast.x
+ballast_l_25,..\..\..\Nagoya_Common\Railway_Obj\Rail\JR_Line\BallastCL.x
+ballast_r_25,..\..\..\Nagoya_Common\Railway_Obj\Rail\JR_Line\BallastCR.x
+
+# 架線柱
+wirepole_inner,..\..\..\Nagoya_Common\Railway_Obj\Pole\Pole0_14.x
+wirepole_outer,..\..\..\Nagoya_Common\Railway_Obj\Pole\Pole0_15.x
+
+# 架線
+trolleywire_25a,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(25A).x
+trolleywire_25b,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(25B).x
+trolleywire_40a,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(40A).x
+trolleywire_40b,..\..\..\Nagoya_Common\Railway_Obj\Torory\Sigle\Torory(40B).x
+
+# 駅
+station_side_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\L.x
+station_floor_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\CL.x
+station_wall_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\WallL.x
+station_roof_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\RoofCL.x
+station_eaves_l_25,..\..\..\Nagoya_Common\Build\Form\Plat_Form\RoofL.x
+
+# 停止位置目標
+stopsign,..\..\..\Nagoya_Common\Railway_Obj\Sign\Stop\Stop.x
+
+# 停止位置目標地上子 (ATS-S 路線ではないが ATS-S 用地上子で代用)
+transponder_1,..\..\..\Nagoya_Common\Railway_Obj\Signal\Beacon\S.x
+
+# 閉塞境界標示
+atc_block_0,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\0.x
+atc_block_1,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\1.x
+atc_block_2,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\2.x
+atc_block_3,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\3.x
+atc_block_4,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\4.x
+atc_block_5,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\5.x
+atc_block_6,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\6.x
+atc_block_7,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\7.x
+atc_block_8,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\8.x
+atc_block_9,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\9.x
+atc_block_x,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\10.x
+
+# ORP 標識
+atc_orp_start,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\sign3.x
+atc_orp_10,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\sign4.x
+atc_orp_20,..\..\..\Nagoya_Common\Railway_Obj\Sign\ATC\sign5.x
+
+# 柵
+fence_5,..\..\..\Nagoya_Common\Build\EnsenSet\Fence.x
+
+# 沿線セット
+railsideset_l_1_50,..\..\..\Nagoya_Common\Build\EnsenSet\0L.x
+railsideset_l_2_50,..\..\..\Nagoya_Common\Build\EnsenSet\1L.x
+railsideset_r_1_50,..\..\..\Nagoya_Common\Build\EnsenSet\0R.x
+railsideset_r_2_50,..\..\..\Nagoya_Common\Build\EnsenSet\1R.x
+railsideset_r_3_50,..\..\..\Nagoya_Common\Build\EnsenSet\10R.x
+railsideset_r_4_50,..\..\..\Nagoya_Common\Build\EnsenSet\11R.x
+
+# 家
+house_a,..\..\..\Nagoya_Common\Build\house\Model\House0_R_00.x
+house_b,..\..\..\Nagoya_Common\Build\house\Model\House0_L_11.x
+house_c,..\..\..\Nagoya_Common\Build\house\Model\House0_R_22.x
+house_d,..\..\..\Nagoya_Common\Build\house\Model\House0_L_33.x
+house_e,..\..\..\Nagoya_Common\Build\house\Model\House0_R_44.x
+house_f,..\..\..\Nagoya_Common\Build\house\Model\House0_L_01.x
+house_g,..\..\..\Nagoya_Common\Build\house\Model\House0_R_12.x
+house_h,..\..\..\Nagoya_Common\Build\house\Model\House0_L_23.x
+house_i,..\..\..\Nagoya_Common\Build\house\Model\House0_R_34.x
+house_j,..\..\..\Nagoya_Common\Build\house\Model\House0_L_45.x
+house_k,..\..\..\Nagoya_Common\Build\house\Model\House0_R_02.x
+house_l,..\..\..\Nagoya_Common\Build\house\Model\House0_L_13.x
+house_m,..\..\..\Nagoya_Common\Build\house\Model\House0_R_24.x
+house_n,..\..\..\Nagoya_Common\Build\house\Model\House0_L_35.x
+house_o,..\..\..\Nagoya_Common\Build\house\Model\House0_R_46.x
+house_p,..\..\..\Nagoya_Common\Build\house\Model\House0_L_03.x
+house_q,..\..\..\Nagoya_Common\Build\house\Model\House0_R_14.x
+house_r,..\..\..\Nagoya_Common\Build\house\Model\House0_L_25.x
+house_s,..\..\..\Nagoya_Common\Build\house\Model\House0_R_36.x
+house_t,..\..\..\Nagoya_Common\Build\house\Model\House0_L_47.x

@@ -25,6 +25,7 @@
  3. 上り勾配試験
  4. 下り勾配試験
  5. 信号試験
+    * 5a. ATC 試験
 
 運転方法は[プラグインの Readme](https://github.com/magicant/bve-autopilot) を見てください。
 
