@@ -1,0 +1,10 @@
+BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_orp\map_main.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 06. ORP 試験
+Image = 
+Comment = ORP のある停車駅での動作を確認する試験
