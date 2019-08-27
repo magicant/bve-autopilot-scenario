@@ -1,0 +1,40 @@
+BveTs Map 2.02
+
+Station.Load('stations.csv');
+Structure.Load('structures\structures.csv');
+
+0;
+	Curve.SetGauge(1.067);
+
+	Background.Change('bg');
+	Repeater['ground'].Begin(0, 0, -0.5, 0, 0, 0, 0, 1, 50, 50, 'ground_grass_50');
+	Repeater['slab'].Begin0(0, 3, 5, 5, 'slab_5');
+	Repeater['wirepoles'].Begin(0, 0, 0, 0, 0, 180, 0, 0, 0, 40, 'wirepole_inner', 'wirepole_outer');
+	Repeater['trolleywire'].Begin(0, 0, 0, 0, 0, 0, 0, 1, 40, 40, 'trolleywire_40a', 'trolleywire_40b');
+
+	Station['station0'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance + 80; // 30 km/h 制限開始
+	SpeedLimit.Begin(30);
+	Structure['speedlimit_30'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1006, -1, 30);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance;
+
+distance + 300;
+	Station['station1'].Put(-1, -2, 10);
+	$distance = distance;
+	include 'map_station.txt';
+$distance - 200;
+	Beacon.Put(30, -1, 210000); // わざと 10 メートル過走させる
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 20;
+	Beacon.Put(30, -1, 30000); // わざと 10 メートル過走させる
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 0;
+	Beacon.Put(30, -1, 0); // 正しい位置を設定
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance;
