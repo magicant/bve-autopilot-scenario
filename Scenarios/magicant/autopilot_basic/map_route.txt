@@ -43,7 +43,7 @@ $distance - 2;
 	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance;
 
-distance + 1000;
+distance + 999.5;
 	Station['station3'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
