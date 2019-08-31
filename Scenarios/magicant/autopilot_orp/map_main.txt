@@ -1,0 +1,130 @@
+BveTs Map 2.02
+
+Station.Load('stations.csv');
+Structure.Load('structures\structures.csv');
+
+0;
+	Background.Change('bg');
+	Repeater['ground'].Begin(0, 0, -0.5, 0, 0, 0, 0, 3, 50, 50, 'ground_grass_50');
+	Repeater['ballast'].Begin0(0, 3, 5, 5, 'ballast_5');
+	Repeater['wirepoles'].Begin(0, 0, 0, 0, 0, 180, 0, 0, 0, 40, 'wirepole_inner', 'wirepole_outer');
+	Repeater['trolleywire'].Begin(0, 0, 0, 0, 0, 0, 0, 1, 40, 40, 'trolleywire_40a', 'trolleywire_40b');
+
+	Section.Begin(0, 10, 15, 18, 20, 22, 23);
+	Beacon.Put(100, 0, 22); // Set Odakyu plug-in to ATC mode
+
+	Station['station0'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+	Beacon.Put(1001, -1, 2);
+
+$distance + 5;
+	Section.Begin(0, 10, 15, 18, 20, 22, 23);
+	$distance = distance;
+	Structure['atc_block_5'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 100;
+	Section.Begin(0, 10, 15, 18, 20, 22, 23);
+	$distance = distance;
+	Structure['atc_block_4'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 70;
+	Section.Begin(0, 10, 15, 18, 20, 22, 23);
+	$distance = distance;
+	Structure['atc_block_3'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 60;
+	Section.Begin(0, 10, 15, 18, 20, 22, 23);
+	$distance = distance;
+	Structure['atc_block_2'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 60;
+	Section.Begin(0, 10, 15, 18, 20, 22, 23);
+	$distance = distance;
+	Structure['atc_block_1'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 58;
+	Section.Begin(0, 35, 15, 18, 20, 22, 23);
+	$distance = distance;
+	Structure['atc_block_0'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Structure['atc_orp_start'].Put(0, 0, -0.2, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(12, 1, 48);
+	Beacon.Put(31, 1, 0);
+
+$distance + 47;
+	Station['station1'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+
+$distance + 5;
+	Section.Begin(0, 10, 17, 19, 22, 23);
+	$distance = distance;
+	Structure['atc_block_5'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 100;
+	Section.Begin(0, 10, 17, 19, 22, 23);
+	$distance = distance;
+	Structure['atc_block_4'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 100;
+	Section.Begin(0, 10, 17, 19, 22);
+	$distance = distance;
+	Structure['atc_block_3'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 100;
+	Section.Begin(0, 10, 17, 19);
+	$distance = distance;
+	Structure['atc_block_2'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 60;
+	Section.Begin(0, 10, 17);
+	$distance = distance;
+	Structure['atc_block_1'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(31, 1, 0);
+	Beacon.Put(1012, 2, 0);
+
+$distance + 57;
+	Section.Begin(0, 35);
+	$distance = distance;
+	Structure['atc_block_0'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	Structure['atc_orp_start'].Put(0, 0, -0.2, -3, 0, 0, 0, 0, 0);
+	Beacon.Put(12, 1, 79);
+	Beacon.Put(31, 1, 0);
+
+$distance + 78;
+	Station['station2'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+
+$distance + 5;
+	Section.Begin(0);
+	$distance = distance;
+	// Structure['atc_block_5'].Put(0, 1.8, 0, -3, 0, 0, 0, 0, 0);
+	// Beacon.Put(31, 1, 0);
+	// Beacon.Put(1012, 2, 0);
+
+distance + 10;
+	Structure['railend'].Put(0, 0, 0, 0, 0, 0, 0, 3, 0);
+	Repeater['ballast'].End();
+ceil(distance / 40) * 40;
+	Repeater['trolleywire'].End();
+distance + 1;
+	Repeater['wirepoles'].End();
