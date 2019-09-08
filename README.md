@@ -4,7 +4,11 @@
 
 これは [bve-autopilot プラグイン](https://github.com/magicant/bve-autopilot)のテスト用の簡易シナリオです。
 
+## 必要なもの
+
 このシナリオデータでは [Nagoya_Common 共通ストラクチャパック](https://kumoha12.web.fc2.com/Common.html)を参照しています。Nagoya_Common のファイル群を同じ Scenarios フォルダーに入れてから起動してください。
+
+自動運転プラグインが起動しない ("Cannot load" というエラーメッセージが表示される) 場合は Visual C++ 再頒布可能ランタイムライブラリー (vc_redist.x86.exe) を[リリースページ](https://github.com/magicant/bve-autopilot/releases)からダウンロードしてインストールしてください。
 
 ## クリアカー
 
