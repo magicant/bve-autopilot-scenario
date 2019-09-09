@@ -145,7 +145,8 @@ distance + 20;
 distance + 20;
 	Gradient.Begin(40 * $slope);
 $distance - 150; // ブレーキを間に合わせるため手前に設置
-	Beacon.Put(1008, -1, 150040 * $slope);
+	Beacon.Put(1008, -1, 140020 * $slope);
+	Beacon.Put(1008, -1, 160040 * $slope);
 	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
 $distance + 25;
