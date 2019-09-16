@@ -107,7 +107,7 @@ $distance + 100;
 	Beacon.Put(1012, 1, 4320);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:04:40');
+	PreTrain.Pass('12:04:41');
 
 $distance + 215;
 	Station['station3'].Put(-1, -2, 2);
@@ -123,7 +123,7 @@ $distance + 26;
 	Beacon.Put(1012, 1, 43320);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:04:41');
+	PreTrain.Pass('12:04:42');
 
 $distance + 500;
 	Section.Begin(0, 2, 3, 3, 4);
@@ -135,7 +135,7 @@ $distance + 500;
 	Beacon.Put(1012, 2, 4320);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:05:23');
+	PreTrain.Pass('12:05:28');
 
 $distance + 400;
 	Section.Begin(0, 2, 3, 4);
@@ -146,7 +146,7 @@ $distance + 400;
 	// Beacon.Put(1012, 1, 4320); // 手前に設置済み
 	// Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:05:50');
+	PreTrain.Pass('12:05:55');
 
 $distance + 500;
 	Section.Begin(0, 2, 3, 4);
@@ -157,7 +157,7 @@ $distance + 500;
 	Beacon.Put(1012, 1, 4200);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:06:05');
+	PreTrain.Pass('12:06:08');
 
 $distance + 215;
 	Station['station4'].Put(-1, -2, 2);
@@ -173,7 +173,7 @@ $distance + 26;
 	Beacon.Put(1012, 1, 4320);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:06:25');
+	PreTrain.Pass('12:06:30');
 
 $distance + 400;
 	Section.Begin(0, 2, 3, 4);
@@ -184,5 +184,5 @@ $distance + 400;
 	Beacon.Put(1012, 1, 4320);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:06:30');
+	PreTrain.Pass('12:06:35');
 
