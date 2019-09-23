@@ -1,0 +1,31 @@
+BveTs Map 2.02
+
+Station.Load('stations.csv');
+Structure.Load('structures\structures.csv');
+
+0;
+	Background.Change('bg');
+	Repeater['ground'].Begin(0, 0, -0.5, 0, 0, 0, 0, 3, 50, 50, 'ground_grass_50');
+	Repeater['slab'].Begin0(0, 3, 5, 5, 'slab_5');
+	Repeater['wirepoles'].Begin(0, 0, 0, 0, 0, 180, 0, 0, 0, 25, 'wirepole_inner', 'wirepole_outer');
+	Repeater['trolleywire'].Begin(0, 0, 0, 0, 0, 0, 0, 1, 25, 25, 'trolleywire_25a', 'trolleywire_25b');
+
+	// SpeedLimit.Begin(10);
+	// Beacon.Put(1007, -1, 10);
+0.99;
+	Station['start'].Put(-1, -0.1, 0.1);
+1;
+	Beacon.Put(30, -1, 5000);
+	Beacon.Put(1031, -1, 10);
+6;
+	Station['stop'].Put(-1, -0.1, 0.1);
+	$distance = distance;
+	include 'map_station.txt';
+
+distance + 10;
+	Structure['railend'].Put(0, 0, 0, 0, 0, 0, 0, 3, 0);
+	Repeater['slab'].End();
+ceil(distance / 25) * 25;
+	Repeater['trolleywire'].End();
+distance + 1;
+	Repeater['wirepoles'].End();
