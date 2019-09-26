@@ -1,0 +1,10 @@
+BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_basic\map_main_deceleration.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 01b. 減速度変更試験
+Image = 
+Comment = 減速度を地上子から変更する試験

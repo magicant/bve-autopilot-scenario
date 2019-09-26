@@ -1,0 +1,10 @@
+BveTs Map 2.02
+
+Station.Load('stations_deceleration.csv');
+include 'map_route.txt';
+
+// 減速度設定地上子
+$station1 + 10;
+	Beacon.Put(1002, -1, 25);
+$station2 + 10;
+	Beacon.Put(1002, -1, 50);
