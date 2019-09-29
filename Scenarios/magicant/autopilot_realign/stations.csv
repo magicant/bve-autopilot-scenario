@@ -1,4 +1,4 @@
 BveTs Station List 2.00
 #,Name,Arrival time,Departure time,Departure preparation duration,Jump time,Signal,Boarding duration,Occupancy rate,Arrival sound,Departure sound,Door reopen possibility,Door reopen duration
 start,,,,0,12:00:00,0,0,0,,,0,0
-stop,,,t,5,12:00:10,0,0,0,,,0,0
+stop,波止浜,,t,5,12:00:10,0,0,0,,,0,0
