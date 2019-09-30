@@ -1,0 +1,10 @@
+﻿BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_swp2\map_main.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 05b. swp2 試験
+Image = 
+Comment = swp2.dll 用地上子に従って速度を守る試験
