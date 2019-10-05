@@ -29,12 +29,12 @@ distance + 300;
 	$distance = distance;
 	include 'map_station.txt';
 $distance - 200;
-	Beacon.Put(30, -1, 210000); // わざと 10 メートル過走させる
+	Beacon.Put(1030, -1, 210000); // わざと 10 メートル過走させる
 	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 20;
-	Beacon.Put(30, -1, 30000); // わざと 10 メートル過走させる
+	Beacon.Put(1030, -1, 30000); // わざと 10 メートル過走させる
 	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 0;
-	Beacon.Put(30, -1, 0); // 正しい位置を設定
+	Beacon.Put(1030, -1, 0); // 正しい位置を設定
 	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance;
