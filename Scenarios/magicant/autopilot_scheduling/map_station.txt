@@ -1,0 +1,16 @@
+BveTs Map 2.02
+
+$distance;
+
+	Structure['stopsign'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
+distance - 210;
+	Repeater['station_side_l'].Begin0(0, 1, 25, 25, 'station_side_l_25');
+	Repeater['station_floor_l'].Begin0(0, 1, 25, 25, 'station_floor_l_25');
+	Repeater['station_wall_l'].Begin0(0, 1, 25, 25, 'station_wall_l_25');
+	Repeater['station_roof_l'].Begin0(0, 1, 25, 25, 'station_roof_l_25');
+distance + 220;
+	Repeater['station_side_l'].End();
+	Repeater['station_floor_l'].End();
+	Repeater['station_wall_l'].End();
+	Repeater['station_roof_l'].End();
+distance - 10;

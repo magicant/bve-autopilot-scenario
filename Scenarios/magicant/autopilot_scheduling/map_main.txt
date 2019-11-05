@@ -1,0 +1,80 @@
+BveTs Map 2.02
+
+Station.Load('stations.csv');
+Structure.Load('structures\structures.csv');
+
+Light.Ambient(0.05, 0.05, 0.05);
+Light.Diffuse(0.58, 0.57, 0.54);
+Light.Direction(25, 0);
+
+0;
+	Background.Change('bg');
+	Fog.Interpolate(0.001, 0.1, 0.1, 0.1);
+	Repeater['ground'].Begin(0, 0, -0.5, 0, 0, 0, 0, 3, 50, 50, 'ground_grass_50');
+	Repeater['slab'].Begin0(0, 3, 5, 5, 'slab_5');
+	Repeater['wirepoles'].Begin(0, 0, 0, 0, 0, 180, 0, 0, 0, 40, 'wirepole_inner', 'wirepole_outer');
+	Repeater['trolleywire'].Begin(0, 0, 0, 0, 0, 0, 0, 1, 40, 40, 'trolleywire_40a', 'trolleywire_40b');
+
+	Station['station0'].Put(-1, -2, 2);
+	$distance = distance;
+	$station0 = distance;
+	include 'map_station.txt';
+
+	Beacon.Put(1028, -1, 24 * 60 * 60 - 15);
+	Beacon.Put(1029, -1, 300 * 1000 + 999);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+distance + 300;
+	Station['station1'].Put(-1, -2, 2);
+	$distance = distance;
+	$station1 = distance;
+	include 'map_station.txt';
+$distance - 200;
+	// Beacon.Put(1030, -1, 200000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 20;
+	// Beacon.Put(1030, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 2;
+	// Beacon.Put(1030, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance;
+	Beacon.Put(1028, -1, 15);
+	Beacon.Put(1029, -1, 600 * 1000 + 999);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+distance + 600;
+	Station['station2'].Put(-1, -2, 2);
+	$distance = distance;
+	$station2 = distance;
+	include 'map_station.txt';
+$distance - 400;
+	// Beacon.Put(1030, -1, 400000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 20;
+	// Beacon.Put(1030, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 2;
+	// Beacon.Put(1030, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance;
+	Beacon.Put(1028, -1, 70); // 誤差を見越して 5 秒早い時刻を設定
+	Beacon.Put(1029, -1, 999 * 1000 + 0);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+distance + 999.5;
+	Station['station3'].Put(-1, -2, 2);
+	$distance = distance;
+	$station3 = distance;
+	include 'map_station.txt';
+$distance - 700;
+	Beacon.Put(1030, -1, 700000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 20;
+	Beacon.Put(1030, -1, 20000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance - 2;
+	Beacon.Put(1030, -1, 2000);
+	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance;
+
