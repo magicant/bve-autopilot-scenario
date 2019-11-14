@@ -7,4 +7,4 @@ Vehicle = magicant\clearcar\Vehicle.txt
 Author = magicant
 Title = 07. 停止位置修正試験
 Image = 
-Comment = 低い速度で進行して停止位置を修正する試験試験
+Comment = 低い速度で進行して停止位置を修正する試験
