@@ -42,6 +42,7 @@ Light.Direction(25, 0);
 
 	Station['station0'].Put(-1, -2, 2);
 	$distance = distance;
+	$station0 = distance;
 	include 'map_station.txt';
 
 $distance + 5;
@@ -88,6 +89,7 @@ $distance + 136;
 $distance + 100;
 	Station['station1'].Put(-1, -2, 2);
 	$distance = distance;
+	$station1 = distance;
 	include 'map_station.txt';
 
 $distance + 5;
@@ -143,6 +145,7 @@ $distance + 100;
 $distance + 86;
 	Station['station2'].Put(-1, -2, 2);
 	$distance = distance;
+	$station2 = distance;
 	include 'map_station.txt';
 
 $distance + 5;
@@ -210,6 +213,7 @@ $distance + 110;
 $distance + 100;
 	Station['station3'].Put(-1, -2, 2);
 	$distance = distance;
+	$station3 = distance;
 	include 'map_station.txt';
 
 $distance - 200;
@@ -306,6 +310,7 @@ $distance + 72;
 $distance + 78;
 	Station['station4'].Put(-1, -2, 2);
 	$distance = distance;
+	$station4 = distance;
 	include 'map_station.txt';
 
 $distance + 5;

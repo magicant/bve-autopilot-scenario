@@ -1,0 +1,10 @@
+BveTs Map 2.02
+
+include 'map_main.txt';
+
+0;
+	Beacon.Put(1003, -1, 0);
+$station1 - 5;
+	Beacon.Put(1003, -1, 10);
+$station3 - 5;
+	Beacon.Put(1003, -1, -1);
