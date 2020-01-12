@@ -1,4 +1,4 @@
-﻿BveTs Scenario 2.00
+BveTs Scenario 2.00
 
 RouteTitle = 自動運転試験線
 Route = magicant\autopilot_atc\map_main_autodepart.txt
