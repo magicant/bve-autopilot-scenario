@@ -60,3 +60,9 @@
    - このファイルのライセンスは [LGPL 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) です。
 
 またシナリオで参照されている Nagoya_Common 共通ストラクチャパック内のファイルや京成千葉線のファイルはこのレポジトリーに含まれるファイルではないためクリエイティブ・コモンズの対象ではありません。
+
+## 質問・問い合わせ
+
+- [ツイッター](https://twitter.com/tnacigam)で
+- [メール](mailto:magicant@wonderwand.net)で
+- [Issues](https://github.com/magicant/bve-autopilot-scenario/issues/new) で
