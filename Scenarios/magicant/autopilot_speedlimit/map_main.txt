@@ -150,38 +150,45 @@ $distance - 2;
 	Beacon.Put(1030, -1, 2000);
 	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 210; // 駅内制限 40 km/h
+	$speedlimit40 = distance;
 	SpeedLimit.Begin(40);
 	Structure['speedlimit_40'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_0'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
-distance - 200;
-	Beacon.Put(1006, -1, 200040);
-	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 70; // 制限その 2
+	$speedlimit20 = distance;
 	SpeedLimit.Begin(20);
 	Structure['speedlimit_20'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_0'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
-distance - 100;
-	Beacon.Put(1006, -1, 100020);
-	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 15; // 制限その 3
+	$speedlimit10 = distance;
 	SpeedLimit.Begin(10);
 	Structure['speedlimit_10'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_0'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
-distance - 40;
-	Beacon.Put(1006, -1, 40010);
-	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance + 1; // 制限その 4
+	$speedlimit1 = distance;
+	// 制限速度 0 km/h はプラグインが対応していないので 1 km/h とする
 	SpeedLimit.Begin(1);
 	Structure['speedlimit_00'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_1'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, 1.8, 0, 0, 0, 0, 0, 0, 0);
-distance - 15;
-	// 制限速度 0 km/h はプラグインが対応していないので 1 km/h とする
-	Beacon.Put(1006, -1, 15001);
+
+$speedlimit40 - 210;
+	Beacon.Put(1006, -1, 10 + 1000 * ($speedlimit10 - distance));
+	Beacon.Put(1006, -1, 40 + 1000 * ($speedlimit40 - distance));
 	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+distance + 5; // 同じ制限区間に複数の地上子を置くテスト (一つ目)
+	Beacon.Put(1006, -1, 20 + 1000 * ($speedlimit20 - distance));
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+distance + 5; // 同じ制限区間に複数の地上子を置くテスト (二つ目)
+	Beacon.Put(1006, -1, 20 + 1000 * ($speedlimit20 - distance));
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$speedlimit1 - 15;
+	Beacon.Put(1006, -1,  1 + 1000 * ($speedlimit1 - distance));
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
 $distance;
 
 distance + 10;
