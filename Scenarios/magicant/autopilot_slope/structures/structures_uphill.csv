@@ -36,6 +36,8 @@ speedlimit_pole,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Pole.x
 slope_ls,..\..\..\Nagoya_Common\Railway_Obj\Sign\Gradient\LU.x
 slope_sl,..\..\..\Nagoya_Common\Railway_Obj\Sign\Gradient\UL.x
 slope_ss,..\..\..\Nagoya_Common\Railway_Obj\Sign\Gradient\U.x
+slope_sr,..\..\..\Nagoya_Common\Railway_Obj\Sign\Gradient\DU.x
+slope_rs,..\..\..\Nagoya_Common\Railway_Obj\Sign\Gradient\UD.x
 
 # 地上子 (ATS-S 路線ではないが ATS-S 用地上子で代用)
 transponder_1,..\..\..\Nagoya_Common\Railway_Obj\Signal\Beacon\S.x

@@ -158,6 +158,34 @@ $distance;
 
 distance + 5;
 	Gradient.BeginTransition();
+distance + 40;
+	Structure['slope_sr'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1008, -1, -40 * $slope);
+distance + 40;
+	Gradient.Begin(-40 * $slope);
+
+distance + 900;
+
+	Gradient.BeginTransition();
+distance + 20;
+	$distance = distance;
+	Structure['slope_rs'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+distance + 20;
+	Gradient.Begin(40 * $slope);
+$distance - 600; // ブレーキを間に合わせるため手前に設置
+	Beacon.Put(1008, -1, 590000);
+	Beacon.Put(1008, -1, 610040 * $slope);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+$distance + 100;
+
+	Station['station8'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 5;
+	Gradient.BeginTransition();
 distance + 5;
 	Structure['slope_ss'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1008, -1, 50 * $slope);
