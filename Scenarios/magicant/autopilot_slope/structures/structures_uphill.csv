@@ -29,6 +29,7 @@ stopsign,..\..\..\Nagoya_Common\Railway_Obj\Sign\Stop\Stop.x
 
 # 速度制限標識
 speedlimit_0,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\0.x
+speedlimit_60,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\60.x
 speedlimit_90,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\90.x
 speedlimit_pole,..\..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Pole.x
 

@@ -121,7 +121,18 @@ distance + 20;
 distance + 20;
 	Gradient.Begin(40 * $slope);
 
-distance + 1500; // 速度維持の試験のためここだけ距離が長め
+distance + 1300; // 速度維持の試験のためここは距離が長め
+
+	$distance = distance;
+	SpeedLimit.Begin(60);
+	Structure['speedlimit_60'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+distance - 600;
+	Beacon.Put(1006, -1, 600060);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+$distance + 400;
 
 	Station['station6'].Put(-1, -2, 2);
 	$distance = distance;
@@ -135,6 +146,12 @@ distance + 20;
 	Beacon.Put(1008, -1, 0);
 distance + 20;
 	Gradient.End();
+
+	SpeedLimit.Begin(90);
+	Structure['speedlimit_90'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1006, -1, 90);
 
 distance + 1000;
 
@@ -180,6 +197,67 @@ $distance - 600; // ブレーキを間に合わせるため手前に設置
 $distance + 100;
 
 	Station['station8'].Put(-1, -2, 2);
+	$distance = distance;
+	include 'map_station.txt';
+$distance;
+
+distance + 900;
+	Gradient.BeginTransition();
+distance + 20;
+	$distance = distance;
+	Structure['slope_sl'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+distance + 20;
+	Gradient.End();
+$distance - 500;
+	Beacon.Put(1008, -1, 500000);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance + 90;
+	$distance = distance;
+	SpeedLimit.Begin(60);
+	Structure['speedlimit_60'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+distance - 590;
+	Beacon.Put(1006, -1, 590060);
+	// Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+$distance + 50;
+	SpeedLimit.Begin(90);
+	Structure['speedlimit_90'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1006, -1, 90);
+
+distance + 700;
+	Gradient.BeginTransition();
+distance + 20;
+	$distance = distance;
+	Structure['slope_ls'].Put(0, -2, -0.3, 0, 0, 0, 0, 0, 0);
+distance + 20;
+	Gradient.Begin(40 * $slope);
+$distance - 400;
+	Beacon.Put(1008, -1, 400040 * $slope);
+	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+$distance + 90;
+	$distance = distance;
+	SpeedLimit.Begin(60);
+	Structure['speedlimit_60'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+distance - 490;
+	Beacon.Put(1006, -1, 490060);
+	// Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
+
+$distance + 50;
+	SpeedLimit.Begin(90);
+	Structure['speedlimit_90'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_0'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
+	Beacon.Put(1006, -1, 90);
+
+$distance + 500;
+
+	Station['station9'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
 $distance;
