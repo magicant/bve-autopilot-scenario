@@ -52,11 +52,11 @@ distance + 700; // 45 km/h 制限曲線
 	Structure['speedlimit_40'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_5'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
-$distance - 500;
-	Beacon.Put(1006, -1, 500045);
+$distance - 600;
+	Beacon.Put(1006, -1, 600045);
 	// https://github.com/magicant/bve-autopilot/issues/68 の試験用
-	Beacon.Put(1006, -1, 520045);
-	Beacon.Put(1006, -1, 510000);
+	Beacon.Put(1006, -1, 620045);
+	Beacon.Put(1006, -1, 610000);
 	Structure['transponder_2'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance + 25;
 	Curve.Begin(350, 0.042);
@@ -128,8 +128,8 @@ distance + 800;
 	Station['station3'].Put(-1, -2, 2);
 	$distance = distance;
 	include 'map_station.txt';
-$distance - 700;
-	Beacon.Put(1030, -1, 700000);
+$distance - 750;
+	Beacon.Put(1030, -1, 750000);
 	Structure['transponder_1'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 $distance - 20;
 	Beacon.Put(1030, -1, 20000);
