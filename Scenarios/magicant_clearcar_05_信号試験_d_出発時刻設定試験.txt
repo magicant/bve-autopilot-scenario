@@ -1,0 +1,10 @@
+BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_signal\map_main_no_door_open.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 05d. 出発時刻設定試験
+Image = 
+Comment = 出発時刻設定地上子の試験 (黄金から自動発進)
