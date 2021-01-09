@@ -1,10 +1,10 @@
 BveTs Scenario 2.00
 
 RouteTitle = 自動運転試験線
-Route = magicant\autopilot_atc\map_main_autodepart.txt
+Route = magicant\autopilot_signal\map_main_autodepart.txt
 VehicleTitle = クリアカー
 Vehicle = magicant\clearcar\Vehicle.txt
 Author = magicant
-Title = 05c. 自動発進試験 (ATC)
+Title = 05e. 自動発進試験 (非 ATC)
 Image = 
 Comment = 扉が閉まったら自動で発進する試験 (赤坂駅を除く)

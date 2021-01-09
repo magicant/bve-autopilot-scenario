@@ -1,0 +1,19 @@
+BveTs Map 2.02
+
+include 'map_main.txt';
+
+// 自動発進地上子
+0;
+	Beacon.Put(1003, -1, 0);
+$station1 - 5;
+	Beacon.Put(1003, -1, 10);
+$station3 - 5;
+	Beacon.Put(1003, -1, -1);
+
+// 閉塞に対する信号インデックス設定
+$station2 - 5;
+	Beacon.Put(1012, 0, 420);
+	Beacon.Put(1012, 1, 420);
+$stop_signal - 85;
+	Beacon.Put(1012, 0, 4210);
+	Beacon.Put(1012, 1, 420);

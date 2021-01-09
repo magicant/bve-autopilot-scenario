@@ -77,7 +77,7 @@ $distance + 700;
 	include 'map_signal_600.txt';
 
 $distance + 300;
-	Section.Begin(0, 2);
+	Section.Begin(0, 2, 4);
 	$distance = distance;
 	include 'map_signal_280.txt';
 
@@ -111,7 +111,7 @@ $distance + 100;
 	Beacon.Put(1012, 1, 4320);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:04:41');
+	PreTrain.Pass('12:04:42');
 
 $distance + 215;
 	Station['station3'].Put(-1 * $door_open, -2, 2);
@@ -128,7 +128,7 @@ $distance + 26;
 	Beacon.Put(1012, 1, 43320);
 	Structure['transponder_p'].Put(0, 0, 0, -3, 0, 0, 0, 3, 0);
 
-	PreTrain.Pass('12:04:42');
+	PreTrain.Pass('12:04:43');
 
 $distance + 500;
 	Section.Begin(0, 2, 3, 3, 4);
