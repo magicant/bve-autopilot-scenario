@@ -1,8 +1,9 @@
-BveTs Vehicle 1.00
+BveTs Vehicle 2.00
 
 Parameters = parameters\1car.ini
 PerformanceCurve = performance\performance.ini
 Panel = panel\panel.ini
 Sound = sound\sound.ini
 MotorNoise = sound\motornoise.ini
-Ats = ats\bve-autopilot.dll
+Ats32 = ats\bve-autopilot.dll
+Ats64 = ats\bve-autopilot64.dll

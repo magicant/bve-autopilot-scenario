@@ -6,11 +6,11 @@
 
 ## 必要なもの
 
-このシナリオデータは BVE 5.7 用です。(BVE 6 で開きたい場合は車両データを適宜書き換えてください)
+このシナリオデータは BVE 5.8 & 6 用です。
 
 このシナリオデータでは [Nagoya_Common 共通ストラクチャパック](https://kumoha12.web.fc2.com/Common.html)を参照しています。Nagoya_Common のファイル群を同じ Scenarios フォルダーに入れてから起動してください。
 
-自動運転プラグインが起動しない ("Cannot load" というエラーメッセージが表示される) 場合は Visual C++ 再頒布可能ランタイムライブラリー (vc_redist.x86.exe) を[リリースページ](https://github.com/magicant/bve-autopilot/releases)からダウンロードしてインストールしてください。
+自動運転プラグインが起動しない ("Cannot load" というエラーメッセージが表示される) 場合は [Visual C++ 再頒布可能ランタイムライブラリー](https://support.microsoft.com/ja-jp/help/2977003/the-latest-supported-visual-c-downloads) (vc_redist.x86.exe, vc_redist.x64.exe) をダウンロードしてインストールしてください。
 
 ## クリアカー
 
