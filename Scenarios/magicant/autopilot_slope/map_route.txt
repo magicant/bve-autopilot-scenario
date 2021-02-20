@@ -255,7 +255,7 @@ $distance + 50;
 	Structure['speedlimit_pole'].Put(0, -1.8, 0, 0, 0, 0, 0, 0, 0);
 	Beacon.Put(1006, -1, 90);
 
-$distance + 500;
+$distance + 850;
 
 	Station['station9'].Put(-1, -2, 2);
 	$distance = distance;
