@@ -1,0 +1,10 @@
+BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_datsp\map_main.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 05f. D-ATS-P 試験
+Image = 
+Comment = D-ATS-P 用地上子に従って速度を守る試験
