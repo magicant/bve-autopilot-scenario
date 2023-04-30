@@ -1,0 +1,10 @@
+BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_atc\map_main_oer.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 05g. ATC 試験 (小田急プラグイン用)
+Image = 
+Comment = 小田急線向け ATS プラグイン用地上子の CS-ATC 路線での試験
