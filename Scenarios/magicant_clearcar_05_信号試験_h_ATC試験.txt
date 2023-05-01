@@ -1,0 +1,10 @@
+BveTs Scenario 2.00
+
+RouteTitle = 自動運転試験線
+Route = magicant\autopilot_metro_tasc\map_main.txt
+VehicleTitle = クリアカー
+Vehicle = magicant\clearcar\Vehicle.txt
+Author = magicant
+Title = 05h. ATC 試験 (メトロ TASC プラグイン用)
+Image = 
+Comment = メトロ TASC プラグイン用地上子の試験
